@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ya Nusantara Resto - Luxury Fine Dining</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Lato:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <div class="brand">
+      <h1>Ya Nusantara Resto</h1>
+      <div class="tag">Fine Dining · Cita Rasa Nusantara</div>
+    </div>
+    <nav>
+      <a href="#menu">Menu</a>
+      <a href="#about">Tentang Kami</a>
+      <a href="#gallery">Galeri</a>
+      <a href="#reservasi">Reservasi</a>
+      <a href="#kontak">Kontak</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <h2>Luxury Fine Dining Experience</h2>
+        <p>Rasakan sensasi kuliner Nusantara yang dipadukan dengan suasana elegan dan pelayanan bintang lima.</p>
+        <div class="hero-cta">
+          <a class="btn" href="#reservasi">Reservasi Sekarang</a>
+          <a class="btn btn-outline" href="#menu">Lihat Menu</a>
+        </div>
+      </div>
+    </section>
+
+    <section id="menu" class="section">
+      <h3>Menu Spesial Kami</h3>
+      <p class="lead">Hidangan khas Nusantara dengan sentuhan modern — hasil karya chef terbaik kami.</p>
+      <div class="cards">
+        <article class="card">
+          <img src="https://images.unsplash.com/photo-1551183053-bf91a1d81141?auto=format&fit=crop&w=1200&q=80" alt="Rendang Wagyu">
+          <h4>Rendang Wagyu</h4>
+          <p class="desc">Wagyu dimasak perlahan dengan bumbu rendang otentik khas Minang.<br><span class="price">Rp 185.000</span></p>
+        </article>
+        <article class="card">
+          <img src="https://files.catbox.moe/brdukt.jpg" alt="Sate Lilit Bali">
+          <h4>Sate Lilit Bali</h4>
+          <p class="desc">Sate ikan segar dengan rempah pilihan dan sambal matah khas Bali.<br><span class="price">Rp 120.000</span></p>
+        </article>
+        <article class="card">
+          <img src="https://files.catbox.moe/g7ght4.jpg" alt="Ayam Betutu">
+          <h4>Ayam Betutu</h4>
+          <p class="desc">Ayam utuh dimasak perlahan dengan bumbu Bali khas Nusantara.<br><span class="price">Rp 155.000</span></p>
+        </article>
+      </div>
+    </section>
+
+    <section id="about" class="section dark">
+      <div class="split">
+        <div class="about-text">
+          <h3>Tentang Kami</h3>
+          <p class="lead">Ya Nusantara Resto menghadirkan pengalaman bersantap elegan yang merayakan kekayaan rasa Indonesia dalam atmosfer eksklusif. Kami berkomitmen menggunakan bahan lokal terbaik dan menyajikannya dengan sentuhan seni modern.</p>
+          <ul class="bullets">
+            <li><strong>Bahan Lokal Premium:</strong> Mendukung petani dan nelayan Indonesia.</li>
+            <li><strong>Chef Berkelas Dunia:</strong> Berpengalaman di restoran Michelin-star.</li>
+            <li><strong>Suasana Eksklusif:</strong> Interior mewah, cahaya hangat, layanan personal.</li>
+          </ul>
+        </div>
+        <div class="about-meta">
+          <div class="meta-card">
+            <h4>Informasi</h4>
+            <p>Alamat: Jl. Sudirman No. 88, Jakarta Pusat</p>
+            <p>Telepon: (021) 567-1234</p>
+            <p>Email: reservasi@yanusantararesto.com</p>
+            <p>Jam buka: Selasa–Minggu • 17:00 — 23:00</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="gallery" class="section">
+      <h3>Galeri</h3>
+      <p class="lead">Suasana hangat dan eksklusif dari Ya Nusantara Resto.</p>
+      <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1528605248644-14dd04022da1?auto=format&fit=crop&w=1200&q=80" alt="Interior 1">
+        <img src="https://files.catbox.moe/ntglod.jpg" alt="Interior 2">
+        <img src="https://files.catbox.moe/8i51ni.jpg" alt="Dining Table">
+        <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1200&q=80" alt="Chef Cooking">
+      </div>
+    </section>
+
+    <section id="reservasi" class="section dark">
+      <h3>Reservasi Meja</h3>
+      <p class="lead">Isi formulir di bawah untuk memesan meja Anda.</p>
+      <form id="reserveForm" class="reservation-form">
+        <div class="row">
+          <input name="name" type="text" placeholder="Nama Lengkap" required>
+          <input name="phone" type="tel" placeholder="No. Telepon" required>
+        </div>
+        <div class="row">
+          <input name="date" type="date" required>
+          <input name="time" type="time" required>
+        </div>
+        <select name="people" required>
+          <option value="">Jumlah Tamu</option>
+          <option>1-2 Orang</option>
+          <option>3-4 Orang</option>
+          <option>5-6 Orang</option>
+          <option>Lebih dari 6</option>
+        </select>
+        <textarea name="notes" rows="3" placeholder="Permintaan khusus (opsional)"></textarea>
+        <button type="submit">Kirim Reservasi</button>
+      </form>
+      <div id="reserveMsg" class="reserve-msg" aria-live="polite"></div>
+    </section>
+
+    <section id="kontak" class="section">
+      <h3>Kontak & Lokasi</h3>
+      <p class="lead">Kami siap melayani reservasi, acara khusus, dan private dining.</p>
+      <p>Jl. Sudirman No. 88, Jakarta Pusat • Telp: (021) 567-1234 • reservasi@yanusantararesto.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <div class="footer-inner">
+      <div>&copy; 2025 Ya Nusantara Resto</div>
+      <div class="socials">Instagram · Facebook · TikTok</div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
